@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dashboard.dart';
+import 'signup.dart';
 
 class loginPage extends StatefulWidget {
   const loginPage({Key? key}) : super(key: key);
@@ -79,6 +80,7 @@ class _loginPageState extends State<loginPage> {
                       child: TextField(
                         controller: passwordcontroller,
                         showCursor: true,
+                        obscureText: true,
                         decoration: const InputDecoration(
                             errorBorder: InputBorder.none,
                             contentPadding: EdgeInsets.only(left:20.00),
@@ -111,14 +113,21 @@ class _loginPageState extends State<loginPage> {
                     SizedBox(
                       height: 10.00,
                     ),
-                    Text(
-                      'Create New Account',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.purple[800],
-                        decoration: TextDecoration.underline,
-                        fontWeight: FontWeight.w700,
-                        //TODO: Create new account OnPressed function call
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => signup()),
+                        );
+                      },
+                      child: Text(
+                        'Create New Account',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.purple[800],
+                          decoration: TextDecoration.underline,
+                          fontWeight: FontWeight.w700,
+                          //TODO: Create new account OnPressed function call
+                        ),
                       ),
                     ),
                   ],

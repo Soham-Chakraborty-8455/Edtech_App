@@ -36,6 +36,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_heatmap_calendar: ^1.0.3
   percent_indicator: ^4.0.0
+  firebase_core: ^1.22.0
+  firebase_auth: ^3.9.0
+  firebase_storage: ^10.3.8
+  cloud_firestore: ^3.4.8
 
 dev_dependencies:
   flutter_test:
