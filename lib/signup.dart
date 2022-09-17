@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dashboard.dart';
 import 'resources/auth_methods.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+
 
 class signup extends StatelessWidget {
   const signup({Key? key}) : super(key: key);
@@ -26,6 +26,24 @@ class _signupPageState extends State<signupPage> {
   TextEditingController namecontroller=TextEditingController();
   TextEditingController passwordcontroller=TextEditingController();
 
+  void SignUPUser() async{
+    String res= await AuthMethods().SignUpUser(
+        SchoolName: SchoolNamecontroller.text,
+        AdmissionNumber: AdmissionNumbercontroller.text,
+        email: namecontroller.text,
+        password: passwordcontroller.text
+    );
+    if(res!="Success"){
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(res),));
+    }
+    else{
+      Navigator.of(context).push(
+        MaterialPageRoute(
+            builder: (context) => dashboard()),
+      );
+    }
+
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -62,6 +80,7 @@ class _signupPageState extends State<signupPage> {
                         ),
                       ),
                     ),
+
                     Container(
                       margin: EdgeInsets.symmetric(horizontal: 10.00),
                       decoration: BoxDecoration(
@@ -158,24 +177,7 @@ class _signupPageState extends State<signupPage> {
                         padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                         child: ElevatedButton(
                           child: const Text('SignUp'),
-                          onPressed: () async {
-                            try {
-                              String res= await AuthMethods().SignUpUser(
-                                  SchoolName: SchoolNamecontroller.text,
-                                  AdmissionNumber: AdmissionNumbercontroller.text,
-                                  email: namecontroller.text,
-                                  password: passwordcontroller.text
-                              );
-                              if (res != null) {
-                                Navigator.of(context).push(
-                                  MaterialPageRoute(
-                                      builder: (context) => dashboard()),
-                                );
-                              }
-                            } catch (e) {
-                              print(e);
-                            }
-                          }
+                          onPressed: (){SignUPUser();}
                           //TODO: Authentication Needed
                         )
                     ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dashboard.dart';
 import 'signup.dart';
+import 'resources/auth_methods.dart';
 
 class loginPage extends StatefulWidget {
   const loginPage({Key? key}) : super(key: key);
@@ -13,6 +14,18 @@ class _loginPageState extends State<loginPage> {
 
   TextEditingController namecontroller=TextEditingController();
   TextEditingController passwordcontroller=TextEditingController();
+
+  void loginUser() async{
+    String res= await AuthMethods().loginUser(email: namecontroller.text, password: passwordcontroller.text);
+    if(res=="Success"){
+      Navigator.of(context).push(
+        MaterialPageRoute(builder: (context) => dashboard()),
+      );
+    }
+    else{
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(res),));
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -101,11 +114,7 @@ class _loginPageState extends State<loginPage> {
                         child: ElevatedButton(
                           child: const Text('Login'),
                           onPressed: () {
-                            print(namecontroller.text);
-                            print(passwordcontroller.text);
-                            Navigator.of(context).push(
-                              MaterialPageRoute(builder: (context) => dashboard()),
-                            );
+                            loginUser();
                           },
                           //TODO: Authentication Needed
                         )
@@ -140,3 +149,4 @@ class _loginPageState extends State<loginPage> {
     );
   }
 }
+
