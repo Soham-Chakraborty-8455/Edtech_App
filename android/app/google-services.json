@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "271088233578",
+    "project_id": "edtech-app-8ee51",
+    "storage_bucket": "edtech-app-8ee51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271088233578:android:6af720809fba16d1e32e13",
+        "android_client_info": {
+          "package_name": "com.example.edtech_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271088233578-aqrihua5t34guflvauapbls13j09r05c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl-Y5B03LNCie7_DgUMm5vZMoVvbNGfJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271088233578-aqrihua5t34guflvauapbls13j09r05c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271088233578:android:0cebdb481efc9a71e32e13",
+        "android_client_info": {
+          "package_name": "com.example.edtech_login_page"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271088233578-aqrihua5t34guflvauapbls13j09r05c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl-Y5B03LNCie7_DgUMm5vZMoVvbNGfJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271088233578-aqrihua5t34guflvauapbls13j09r05c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
