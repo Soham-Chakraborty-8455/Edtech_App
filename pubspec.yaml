@@ -43,6 +43,10 @@ dependencies:
   firebase_database: ^9.1.4
   path_provider: ^2.0.11
   video_player: ^2.4.7
+  syncfusion_flutter_calendar: ^20.2.49
+  pdf_viewer_plugin: ^2.0.1
+  flutter_document_picker: ^5.1.0
+  syncfusion_flutter_pdfviewer: ^20.2.49-beta
 
 dev_dependencies:
   flutter_test:

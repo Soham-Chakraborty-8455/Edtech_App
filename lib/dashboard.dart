@@ -78,7 +78,7 @@ class _dashboardPageState extends State<dashboardPage> {
             CircularPercentIndicator(
               radius: 75.0,
               lineWidth: 10.0,
-              percent: 0.7,
+              percent: 0.0,
               center: CircleAvatar(
                 radius: 60.00,
                 backgroundImage: NetworkImage('https://avatars.githubusercontent.com/u/93662806?s=400&u=5ebda7d133730967b36bc561bbaac696ff2c18a3&v=4'),
@@ -361,75 +361,6 @@ class _dashboardPageState extends State<dashboardPage> {
                                 fontWeight: FontWeight.w500
                             ),
                           ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-
-              ],
-            ),
-
-            SizedBox(height: 10.00),
-
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Expanded(
-                  flex: 1,
-                  child: Card(
-
-                    elevation: 5.00,
-                    child: Container(
-                      padding: EdgeInsets.all(10.00),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: <Widget>[
-                          //TODO: ADD Favourites IMAGE
-                          Image(
-                            image: AssetImage('images/Favourites.png'),
-                            height: 28.00,
-                            width: 28.00,
-                          ),
-                          Text(
-                            'Favourites',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                fontSize: 20.00,
-                                fontWeight: FontWeight.w500
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-
-                Expanded(
-                  flex: 1,
-                  child: Card(
-
-                    elevation: 5.00,
-                    child: Container(
-                      padding: EdgeInsets.all(10.00),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: <Widget>[
-                          //TODO: ADD Settings IMAGE
-                          Image(
-                            image: AssetImage('images/Settings.png'),
-                            height: 28.00,
-                            width: 28.00,
-                          ),
-                          Text(
-                            'Settings',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                fontSize: 20.00,
-                                fontWeight: FontWeight.w500
-                            ),
-                          ),
-                          SizedBox(width: 5.00,)
                         ],
                       ),
                     ),

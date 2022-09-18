@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:edtech_login_page/Assignments/assignment1.dart';
+import 'package:edtech_login_page/Assignments/assignment2.dart';
+import 'package:edtech_login_page/Assignments/assignment3.dart';
+
+
 
 class materialsPage extends StatelessWidget {
   const materialsPage({Key? key}) : super(key: key);
@@ -57,6 +62,95 @@ class MaterialPage extends StatefulWidget {
 class _MaterialPageState extends State<MaterialPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SingleChildScrollView(
+      child: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                SizedBox(
+                  height: 20.00,
+                ),
+                Card(
+                  color: Colors.white,
+                  elevation: 5.00,
+                  child: Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: GestureDetector(
+                      onTap: (){
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => assignment1(),
+                          ),
+                        );
+                      },
+                      child: Text(
+                        'ASSIGNMENT 1',
+                        style: TextStyle(
+                          color:Colors.black,
+                          fontSize: 25.00,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 20.00,
+                ),
+                Card(
+                  color: Colors.white,
+                  elevation: 5.00,
+                  child: Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: GestureDetector(
+                      onTap: (){
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => assignment2(),
+                          ),
+                        );
+                      },
+                      child: Text(
+                        'ASSIGNMENT 2',
+                        style: TextStyle(
+                          color:Colors.black,
+                          fontSize: 25.00,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 20.00,
+                ),
+                Card(
+                  color: Colors.white,
+                  elevation: 5.00,
+                  child: Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: GestureDetector(
+                      onTap: (){
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => assignment3(),
+                          ),
+                        );
+                      },
+                      child: Text(
+                        'ASSIGNMENT 3',
+                        style: TextStyle(
+                          color:Colors.black,
+                          fontSize: 25.00,
+                        ),
+                      ),
+                    ),
+                  ),
+                )
+              ],
+            ),
+
+          )
+      ),
+    );
   }
 }
