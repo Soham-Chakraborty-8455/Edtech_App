@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:edtech_login_page/courses/course1.dart';
+import 'package:edtech_login_page/courses/course2.dart';
+import 'package:edtech_login_page/courses/course3.dart';
 
 class coursePage extends StatelessWidget {
   const coursePage({Key? key}) : super(key: key);
@@ -55,10 +58,98 @@ class CoursePage extends StatefulWidget {
 }
 
 class _CoursePageState extends State<CoursePage> {
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: Center(),
+      child: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                SizedBox(
+                  height: 20.00,
+                ),
+                Card(
+                  color: Colors.white,
+                  elevation: 5.00,
+                  child: Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: GestureDetector(
+                      onTap: (){
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => course1(),
+                          ),
+                        );
+                      },
+                      child: Text(
+                        'COURSE 1',
+                        style: TextStyle(
+                          color:Colors.black,
+                          fontSize: 25.00,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 20.00,
+                ),
+                Card(
+                  color: Colors.white,
+                  elevation: 5.00,
+                  child: Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: GestureDetector(
+                      onTap: (){
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => course2(),
+                          ),
+                        );
+                      },
+                      child: Text(
+                        'COURSE 2',
+                        style: TextStyle(
+                          color:Colors.black,
+                          fontSize: 25.00,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 20.00,
+                ),
+                Card(
+                  color: Colors.white,
+                  elevation: 5.00,
+                  child: Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: GestureDetector(
+                      onTap: (){
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => course3(),
+                          ),
+                        );
+                      },
+                      child: Text(
+                        'COURSE 3',
+                        style: TextStyle(
+                          color:Colors.black,
+                          fontSize: 25.00,
+                        ),
+                      ),
+                    ),
+                  ),
+                )
+              ],
+            ),
+
+          )
+      ),
     );
   }
 }
