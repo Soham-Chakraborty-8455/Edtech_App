@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:edtech_login_page/courses/videoplayerpage.dart';
+import 'package:edtech_login_page/courses/videoplayerpage2.dart';
 import 'package:edtech_login_page/resources/firebase_api.dart';
 import 'package:edtech_login_page/resources/firebase_file.dart';
-import 'package:edtech_login_page/courses/videoplayerpage.dart';
+
 
 class course2 extends StatelessWidget {
   const course2({Key? key}) : super(key: key);
@@ -82,7 +82,7 @@ class _Courses2State extends State<Courses2> {
     onTap: (){
       Navigator.of(context).push(
         MaterialPageRoute(
-          builder: (context) => VideoPlayerApp(),
+          builder: (context) => VideoPlayerApp2(),
         ),
       );
     },

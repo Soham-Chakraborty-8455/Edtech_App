@@ -2,8 +2,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
-class VideoPlayerApp extends StatelessWidget {
-  const VideoPlayerApp({Key? key}) : super(key: key);
+class VideoPlayerApp2 extends StatelessWidget {
+  const VideoPlayerApp2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     // offers several different constructors to play videos from assets, files,
     // or the internet.
     _controller = VideoPlayerController.network(
-      'https://firebasestorage.googleapis.com/v0/b/edtech-app-8ee51.appspot.com/o/Courses%2FModule%201-%20Laser%20Optics%2FLASER%20lec1.mp4?alt=media&token=acd601d0-88dc-43fa-9a85-5c49b01cdff9',
+      'https://firebasestorage.googleapis.com/v0/b/edtech-app-8ee51.appspot.com/o/Courses%2FModule%202%20-%20Entrepreneurship%2FEntrepreneurship%20lec1.mp4?alt=media&token=e36ff7c9-fbaa-4dbd-a471-830082168c38',
     );
 
     // Initialize the controller and store the Future for later use.
