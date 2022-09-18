@@ -1,4 +1,6 @@
+import 'package:edtech_login_page/Certification/certification.dart';
 import 'package:flutter/material.dart';
+
 
 class certificates extends StatelessWidget {
   const certificates({Key? key}) : super(key: key);
@@ -57,7 +59,48 @@ class CertificatePage extends StatefulWidget {
 class _CertificatePageState extends State<CertificatePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SingleChildScrollView(
+      child: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                SizedBox(
+                  height: 20.00,
+                ),
+                Card(
+                  color: Colors.white,
+                  elevation: 5.00,
+                  child: Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: GestureDetector(
+                      onTap: (){
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => certification(),
+                          ),
+                        );
+                      },
+                      child: Text(
+                        'CERTIFICATE 1',
+                        style: TextStyle(
+                          color:Colors.black,
+                          fontSize: 25.00,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 20.00,
+                ),
+
+              ],
+            ),
+
+          )
+      ),
+    );
   }
 }
 

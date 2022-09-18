@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
-class assignment3 extends StatelessWidget {
+class assignment3 extends StatefulWidget {
   const assignment3({Key? key}) : super(key: key);
 
+  @override
+  State<assignment3> createState() => _assignment3State();
+}
+
+class _assignment3State extends State<assignment3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,3 +18,4 @@ class assignment3 extends StatelessWidget {
     );
   }
 }
+
