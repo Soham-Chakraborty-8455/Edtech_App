@@ -42,26 +42,18 @@ There are 6 main sections in the app as follows -
 - Improve the backend of the app by using Flask Framework
 - Improve the videoplayer system of app for better user experience.
 
-## UI Of The Web Application
+## UI Of The Mobile Application
 
-### 1. Home Page
-<pre>
-<img src="https://user-images.githubusercontent.com/78029145/181441355-4324ecab-e617-4439-a0f9-8a7ff01324f4.png" width="1000"> <img src="https://user-images.githubusercontent.com/78029145/181441418-023a5926-a8e4-4534-9770-fd55ee3ce5c2.png" width="1000"> <img src="https://user-images.githubusercontent.com/78029145/181441511-e645e907-d71e-4602-9c17-27cba1420fdf.png" width="1000"> <img src="https://user-images.githubusercontent.com/78029145/181441970-832c9ace-9dbb-4308-bed6-d062247f4147.png" width="1000"> <img src="https://user-images.githubusercontent.com/78029145/181442072-e3e87b33-f36d-413c-9649-27a4387e2744.png" width="1000"> <img src="https://user-images.githubusercontent.com/78029145/181442147-caf6dfdd-f696-4ab3-a298-8d32313476a6.png" width="1000"> 
-</pre>
+<img src="ss/signup.jpg" width="200">  <img src="ss/login.jpg" width="200">  <img src="ss/home.jpg" width="200"> 
+<img src="ss/courses.jpg" width="200">  <img src="ss/schedule.jpg" width="200">  <img src="ss/assignments.jpg" width="200">  <img src="ss/certificates.jpg" width="200">  
 
 
 ## Run Locally
 
 1.1 `git clone <repo link>`
 
-1.2 `cd ManageIt`
+1.2 Open in `Android Studio` and run `Emulator`
 
-1.3 `flask run`
+1.3 `flutter run` in Terminal
 
-## Link To GitHub Readme
-
-See the code [here](https://github.com/BhaswatiRoy/FlipAnalyse)
-
-## Link To Deployed App
-
-See the deployed app [here](https://mighty-dusk-36159.herokuapp.com/)
+See the code [here](https://github.com/Soham-Chakraborty-8455/Edtech_App)
